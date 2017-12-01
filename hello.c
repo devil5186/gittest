@@ -3,7 +3,12 @@
 int addup(int ,int );
 int main(){
 	printf("%d",addup(0,99));
+	int sum=0; 
 	printf("hello world");
+	for(int i=0,i<100,i++){
+		sum+=i;
+	}
+	printf("%d",sum);
 	return 0;
 }
 
