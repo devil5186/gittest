@@ -2,16 +2,14 @@
 #include<stdlib.h>
 int addup(int ,int );
 int main(){
-	printf("%d",addup(0,99));
 	int sum=0; 
-	printf("hello world");
 	for(int i=0;i<100;i++){
 		sum+=i;
 	}
-	printf("%d",sum);
+	printf("add up 0~99:\n\t%d\n",sum);
+	printf("add up 0~99(func):\n\t%d\n",addup(0,99));
 	return 0;
 }
-
 int addup(int begin,int end){
 	int sum = 0;
 	for(int i=begin;i<=end;i++)
